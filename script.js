@@ -15,6 +15,9 @@ for (let column = 0; column < 16; column++) {
         div.setAttribute("id", column);
         div.textContent = column;
         div.style.padding = "5px"
+        div.onmouseover = function() {
+            this.style.backgroundColor = "Red";
+        }
         new_column.appendChild(div);
     }
 }
